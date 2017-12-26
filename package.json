@@ -151,32 +151,6 @@
               "default": true,
               "description": "Enable or disable PyCodeStyle."
             },
-            "exclude": {
-              "type": "array",
-              "default": [
-                ".svn",
-                "CVS",
-                ".bzr",
-                ".hg",
-                ".git",
-                "__pycache__",
-                ".tox"
-              ],
-              "items": {
-                "type": "string"
-              },
-              "description":
-                "Exclude files or directories which match these patterns. Requires `pyls` 0.12.1+"
-            },
-            "filename": {
-              "type": "array",
-              "default": ["*.py"],
-              "items": {
-                "type": "string"
-              },
-              "description":
-                "When parsing directories, only check filenames matching these patterns. Requires `pyls` 0.12.1+"
-            },
             "select": {
               "type": "array",
               "default": [],
