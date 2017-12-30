@@ -1,15 +1,23 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
-    "atom-ide",
     "ide",
     "python",
+    "atom-ide",
     "languageserver",
     "language-server-protocol",
-    "language-client"
+    "language-client",
+    "autocomplete",
+    "jedi",
+    "rope",
+    "pyflakes",
+    "pycodestyle",
+    "pydocstyle",
+    "yapf",
+    "mccabe"
   ],
   "repository": "https://github.com/lgeiger/ide-python",
   "license": "MIT",
@@ -116,7 +124,7 @@
             "all_scopes": {
               "title": "All Scopes",
               "type": "boolean",
-              "default": false,
+              "default": true,
               "description":
                 "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7.0+"
             }
